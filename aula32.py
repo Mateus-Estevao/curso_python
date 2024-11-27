@@ -31,12 +31,12 @@
 nome = input('Digite seu nome: ')
 tamanho_nome = len(nome)
 
-try:
-    if tamanho_nome > 0 and tamanho_nome <= 4:
-        print('Seu nome é pequeno')
-    elif tamanho_nome < 6 :
-        print('Seu nome é normal')
+if tamanho_nome > 1 :
+    if tamanho_nome <= 4:
+            print('Seu nome é pequeno')
+    elif tamanho_nome >= 5 and tamanho_nome <= 6 :
+            print('Seu nome é normal')
     elif tamanho_nome > 6:
-        print('Seu nome é grande')
-except:
-    pass
+            print('Seu nome é grande')
+else:
+    print('Voce não digitou um nome')
